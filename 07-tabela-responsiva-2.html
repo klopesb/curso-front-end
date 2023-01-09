@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./css/reset.css">
+        <link rel="stylesheet" type="text/css" href="./css/new-style.css">
+        <link rel="stylesheet" type="text/css" href="./css/tabelas.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&family=Source+Code+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+        <title> Tabela em CSS </title>
+    </head>
+    <body>
+        <header>
+            <h1>Curso Front-end</h1>
+            <p class="subtitle">Aprenda do Zero ao Pro</p>
+            <h1>Escola Britânica de Artes Criativas e Tecnologia</h1>
+        </header>
+        <div class="nav-container">
+            <div class="link-container">
+                <a class="homepage" href="./01-homepage-1.html">About me</a>
+                <a class="homepage" href="./contato.html">Contato</a>
+            </div>        
+        </div>
+
+        <section>
+            <nav>					
+                <h3>Aulas</h3>
+                <ul class="navegacao">
+                    <li><a href="./02-listas-e-links-2.html"> Listas e Links</a></li>
+                    <li><a href="./07-tabela-responsiva-2.html"> Tabelas</a></li>
+                    <li><a href="./08-web-layouts-1.html"> Web Layouts</a></li>
+					<li><a href="./09-web-layouts-2.html"> Web Layouts/2</a></li>
+                </ul>
+            </nav>
+
+            <article>
+                <div>
+					<div class="title-container">
+						<h2>Tabela em CSS</h2>
+					</div>
+					
+					<p>Exemplo de uma tabela estilizada em CSS: </p>
+
+					<div style="overflow-x: auto;" class="table-container">
+						<table>
+
+							<thead>
+								<tr>
+								<div>
+									<th class="title"></th>
+									<th class="title"></th>
+									<th class="title">Gastos</th>
+									<th class="title"></th>
+									<th class="title"></th>
+									<th class="title"></th>
+								</div>
+								</tr>
+
+								<tr>
+									<th>Ano<br>2022</th>
+									<th>Janeiro</th>
+									<th>Fevereiro</th>
+									<th>Março</th>
+									<th>Abril</th>
+									<th>Maio</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Aluguel</td>
+									<td>R$1000,00</td>
+									<td>R$1000,00</td>
+									<td>R$1000,00</td>
+									<td>R$1000,00</td>
+									<td>R$1000,00</td>
+								</tr>
+								<tr>
+									<td>Energia</td>
+									<td>R$190,00</td>
+									<td>R$175,00</td>
+									<td>R$182,00</td>
+									<td>R$177,00</td>
+									<td>R$164,00</td>
+								</tr>
+								<tr>
+									<td>Água</td>
+									<td>R$55,00</td>
+									<td>R$57,00</td>
+									<td>R$62,00</td>
+									<td>R$58,00</td>
+									<td>R$52,00</td>
+								</tr>
+								<tr>
+									<td>Gás</td>
+									<td>R$90,00</td>
+									<td>R$90,00</td>
+									<td>R$90,00</td>
+									<td>R$90,00</td>
+									<td>R$90,00</td>
+								</tr>
+								<tr>
+									<td>Internet/TV</td>
+									<td>R$120,00</td>
+									<td>R$120,00</td>
+									<td>R$120,00</td>
+									<td>R$120,00</td>
+									<td>R$120,00</td>
+								</tr>
+								<tr>
+									<td>Alimentação</td>
+									<td>R$350,00</td>
+									<td>R$430,00</td>
+									<td>R$380,00</td>
+									<td>R$400,00</td>
+									<td>R$360,00</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td>TOTAL</td>
+									<td>R$1805,00</td>
+									<td>R$1872,00</td>
+									<td>R$1834,00</td>
+									<td>R$1845,00</td>
+									<td>R$1786,00</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+				</div>
+				<div>
+					<h5>Título da tabela ( <i>thead</i> ) </h5>
+					<p>Para colocar o titulo da tabela no cabeçalho, foi colocado em uma div as tags de cabeçalho <i>table row</i> e <i>table head</i> com uma .class identificando o titulo da tabela.</p>
+					<object data="../html/exemplos-sticky-notes/ex-cabeçalho-tabela.html"></object>
+					<p>Também no cabeçalho da tabela, para separar os dados dos gastos de acordo com os meses do ano, foi usada as mesmas tags (tr e th), mas sem o .class. ara diferenciar o cabeçalho das outras células em CSS, foi utilizado os seletores table + th. </p>
+					<object data="../html/exemplos-sticky-notes/ex-cabeçalho-tabela-1.html"></object>
+					<h5>Corpo da tabela ( <i>tbody</i> )</h5>
+					<p>O corpo da tabela é feito usando as tags <i>table row</i> e <i>table data</i>. A primeira coluna da tabela vai especificar os itens onde se coloca os valores, neste caso as contas domésticas (energia, água,etc). Para destacar essa coluna, um pseudocódigo:</p>
+					<object data="../html/exemplos-sticky-notes/ex-corpo-tabela-1.html"></object>
+					<p>O restante do corpo da tabela que contém os valores é a parte da tabela em que vai ser estilizada de forma uniforme.</p>
+					<object data="../html/exemplos-sticky-notes/ex-corpo-tabela-2.html"></object>
+					<h5>Rodapé da tabela ( <i>tfoot</i> )</h5>
+					<p>O rodapé da tabela é onde vai estar os valores totais da soma dos gastos de todas as contas por mês, portanto ela estará destacada de forma diferente do corpo da tabela.</p>
+					<object data="../html/exemplos-sticky-notes/ex-rodape.html"></object>
+
+
+
+				</div>
+            </article>
+        </section>
+
+        <footer>
+            <ul class="navegacao">
+                <li class="socialmidia"><a href="https://www.instagram.com/_karolinabarb/" target="_blank"> <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="Instagram" style="width:30px" class="img"></a></li>
+                <li class="socialmidia"><a href="https://www.facebook.com/karolina.lopes.50/" target="_blank"> <img src="https://cdn-icons-png.flaticon.com/512/20/20837.png" alt="Facebook" style="width:30px" class="img"></a></li>
+                <li class="socialmidia"><a href="https://www.linkedin.com/in/karolina-lopes-barbosa-39035323a/" target="_blank"> <img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="linkedin" style="width:30px" class="img"></a></li>
+                <li class="socialmidia"><a href="https://github.com/klopesb" target="_blank"> <img src="./imagens/GitHub-Mark-64px.png" alt="GitHub" style="width:30px" class="img"></a></li>
+            </ul>   
+            <p class="footer">Desenvolvido por Karolina
+                
+            </p>
+        </footer>
+
+    </body>
+</html>

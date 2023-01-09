@@ -1,0 +1,281 @@
+
+html {
+    margin: 0;
+	padding: 0;
+    font-size: 62,5%;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+/*Cabeçalho*/
+
+header {
+    font-family: 'Source Code Pro', monospace;
+    background-color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: auto;
+    padding: 30px;
+    color: black;
+}
+
+.subtitle {
+    font-size: 1rem;
+    padding: 20px;
+}
+
+.homepage {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+    padding: 0.5rem;
+
+}
+
+.link-container {
+    text-align: center;
+    display: inline;
+}
+
+.nav-container {
+    background-color: black;
+    text-align: center;
+}
+
+section::after {
+    background: white;
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+/*Titulo do menu de navegação*/
+
+h3 {
+    padding: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: black;
+    border: 1px solid black;
+    margin: 10px;
+}
+/*Menu de navegação*/
+
+.navegacao li {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 20px; 
+}
+
+nav {
+    width: 20%;
+    float: left;
+    display: table;
+    display: block;
+    height: 100%;
+}
+
+.socialmidia {
+    display: inline;
+}
+
+.img {
+    padding-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    padding: 0px;
+    margin: 0;
+    color: black;
+}
+a:hover {
+    color: #e9ce2c;
+}
+
+a:active {
+    color: rgba(176, 118, 133, 0.23);
+  }
+
+/*espaço do conteudo na página*/
+
+
+article {
+    width: 80%;
+    float: left;
+    height: 100%;
+    box-sizing: border-box; /* considera o padding e border na largura e altura */
+    
+}
+
+h5 {
+    padding: 18px;
+    font-size: 1.2rem;
+}
+
+.dimensoes-css {
+    list-style-position: inside;
+}
+
+/*rodapé*/
+
+.footer {     
+    color: white;
+    font-size: x-small;
+    padding: 10px;
+    text-align: center;
+    background-color: black;     
+}
+ /*Conteúdo da Página*/
+ 
+ .title-container {
+    font-size: 2rem;
+    text-align: left;
+    padding-bottom: 2.6rem;
+    padding: 3rem;
+    }
+
+li,p {
+    padding: 0.5rem;
+}
+
+.largurafixa {
+    width: 200px;
+    margin: 40px;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+/*Gráfico SVG*/
+#imagem-vetorial {
+    width: 20%
+}
+
+#grafico-01 {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+
+}
+
+#grafico-01 img {
+    width: 100%;
+}
+
+#grafico-02 img {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+    filter: drop-shadow(8px 8px 10px gray );
+}
+/* Círculo*/
+#grafico-circulo {
+    background-color: black;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+/* Triângulo */
+#grafico-triangulo {
+    width: 0; 
+    height: 0; 
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 150px solid black;
+}
+
+.elemento-grafico {
+    padding-bottom: 2rem;
+}
+
+object {
+    margin: 2rem;
+    background-color: #e9cd2c49;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  /*Homepage*/
+
+  .profile-image {
+      border-radius: 50%;
+      padding: 1.5rem;
+
+  }
+/*Formulário da página de contato*/
+
+form {
+    border: 1px solid;
+    width: 40%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+form div {
+	margin: 1rem;
+	padding: 1rem;
+}
+
+label {
+	margin-bottom: 0.2rem;
+	font-size: 1rem; 
+    font-family: 'Roboto Mono', monospace;
+	color: black;
+}
+
+input, textarea{
+	padding: 0.5rem;
+    background-color: #e9cd2c49;
+    border: none;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/*filtros*/
+.filtro {
+    filter: grayscale(100%);
+}
+
+.filtro2 {
+    filter: blur(0px);
+}
+
+.filtro3 {
+    filter: brightness(120%);
+}
+
+.filtro4 {
+    filter: invert(100%);
+    filter: drop-shadow(8px 8px 10px black);
+}
+
+.filtro:hover {
+    filter: grayscale(0%);
+}
+
+.filtro2:hover {
+    filter: blur(5px);
+}
+
+.filtro3:hover {
+    filter: brightness(60%);
+}
+
+
+[type="text"], [type="email"], textarea, label {
+	display: block;
+	width: 100%;
+
+}

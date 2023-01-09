@@ -1,0 +1,178 @@
+@import url("tabelas.css");
+
+
+html {
+	margin: 0;
+	padding: 0;
+	font-family: 'Mukta', sans-serif;
+  font-size: 62,5%; /* equivalente a 10px */
+}
+
+.subtitle {
+  color: #F5F1DF;
+}
+
+body {
+  font-family: 'Mukta', sans-serif;
+  background-color: #F5F1DF;
+}
+
+h1 {
+  color: #F5F1DF;
+}
+
+header {
+  padding: 30px;
+  text-align: center;
+  margin: auto;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #A35D61;
+  font-size: 1.5rem;
+}
+
+.homepage {
+  font-weight: bold;
+  background-color: rgba(176, 118, 133, 0.23);
+  font-size: .9rem;
+  text-align: center;
+}
+
+p, li {
+	font-family: 'Mukta', sans-serif;
+	color: #A35D61;
+  font-size: 1rem;
+  padding: 20px;
+}
+
+h2 {
+  color: #B07685;
+  font-weight: bolder;
+}
+
+h3 {
+  border-bottom: 1px solid;
+  color: #35807D;
+  font-size: 1.4rem;
+  padding-top: 2rem;
+  padding-bottom: 0.6rem;
+
+}
+
+h4 {
+  color: #A35D61;
+  font-size: 1.2em;
+  padding: 1rem;
+}
+
+a {
+	color: #B07685;
+  font-size: 1.6em;
+	text-decoration: none;
+}
+
+ul {
+	background-color: none;
+  font-size: 20px;
+}
+
+ul li {
+  font-size: 0.8rem; /*equivalente a 16px */
+  font-family: 'Mukta', sans-serif;
+  font-weight: bold;
+}
+
+.navegacao {
+	background-color: none;
+  font-size: .8em;
+  font-weight: bolder;
+}
+
+.socialmidia {
+  display: inline;
+}
+
+[type="text"], [type="email"], textarea, label {
+	width: 100%;
+  display: block;
+}
+
+label {
+  margin-bottom: .1rem;
+  font-size: 1.2rem;
+  font-family: 'Mukta', sans-serif;
+  font-weight: bold;
+  color: #A35D61;
+}
+
+input {
+  padding: 1rem;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%; 
+  background: #F5F1DF;
+  padding: 0.5rem;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding-top: 1rem;
+}
+
+
+a:hover {
+  color: #35807D;
+}
+
+a:active {
+  color: rgba(176, 118, 133, 0.23);
+}
+
+article {
+  float: left;
+  padding: 70px;
+  width: 70%;
+  background-color: #F5F1DF;
+}
+
+/* Clear floats after the columns */
+section::after {
+  background: #FFEFD5;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+section {
+  width: auto;
+  height: auto;
+}
+
+/* Style the footer */
+.footer {
+  color: #F5F1DF;
+  padding: 10px;
+  text-align: center;
+  background-color: #A35D61;
+}
+
+form div {
+ margin: 20px;
+ padding: 20px;
+ border: 1px solid #A35D61;
+}
+
+.submit {
+  border: none;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}

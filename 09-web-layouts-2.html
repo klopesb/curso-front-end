@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./css/reset.css">
+        <link rel="stylesheet" type="text/css" href="./css/new-style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&family=Source+Code+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+        <title> HTML/CSS - Web Layouts </title>
+    </head>
+    <body>
+        <header>
+            <h1>Curso Front-end</h1>
+            <p class="subtitle">Aprenda do Zero ao Pro</p>
+            <h1>Escola Britânica de Artes Criativas e Tecnologia</h1>
+        </header>
+        <div class="nav-container">
+            <div class="link-container">
+                <a class="homepage" href="./01-homepage-1.html">About me</a>
+                <a class="homepage" href="./contato.html">Contato</a>
+            </div>
+        
+        </div>
+
+        <section>
+            <nav>					
+                <h3>Aulas</h3>
+                <ul class="navegacao">
+                <li><a href="./02-listas-e-links-2.html"> Listas e Links</a></li>
+                    <li><a href="./07-tabela-responsiva-2.html"> Tabelas</a></li>
+                    <li><a href="./08-web-layouts-1.html"> Web Layouts</a></li>
+                    <li><a href="./09-web-layouts-2.html"> Web Layouts/2</a></li>
+
+                </ul>
+            </nav>
+
+            <article>
+                <div class="title-container">
+                    <h2>Layouts Fluídos/2</h2>
+                </div>
+                
+
+                <div class="dimensoes-css">
+                    <h5>Fitros e manipulação com CSS</h5>
+
+                    <p>Os filtros são usados para colocar efeitos em imagens e edita-las sem precisar usar editor de imagem</p><br>
+                    <p> Alguns exemplos de filtros:</p><br>
+                </div>
+                <div>
+                    <ul>
+                        <li><i>Greyscale</i> : Coloca filtro de escala cinza na imagem;</li>
+                                <div id="grafico-01">
+                                    <img class="filtro" src="./M8-apoio/images/coffee-square.jpg" alt="café">
+                                </div>
+                    
+                        <li><i>Blur</i> : Adiciona um efeito desfocado;</li>
+                                <div id="grafico-01">
+                                    <img class="filtro2" src="./M8-apoio/images/coffee-square.jpg" alt="café">
+                                </div>
+                        <li><i>Brightness</i> : Adiciona brilho a imagem;</li>
+                                <div id="grafico-01">
+                                    <img class="filtro3" src="./M8-apoio/images/coffee-square.jpg" alt="café">
+                                </div>
+                        <li><i>Drop-shadow</i> : Adiciona sombreamento na imagem;</li>
+                                <div id="grafico-02">
+                                    <img class="filtro4" src="./M8-apoio/images/coffee-square.jpg" alt="café">
+                                </div>
+
+                    </ul>
+                    <!--colocar imagens do css que vou fazer para demonstrar os exemplos-->                
+                </div>
+
+                <div class="dimensoes-css">
+
+                    <p>Para o layout se tornar fluído utiliza-se as propriedades <i>width</i> e <i>height</i> nas seguintes medidas relativas:</p>
+                    <ul>
+                        <li>porcentagem <i>(%)</i></li>
+                        <li>viewport width <i>(vw)</i></li>
+                        <li>viewport height <i>(vh)</i></li>
+                    </ul>
+
+                    <p>Essas unidades permitem que <u> os elementos se adaptem ao tamanho da tela do usuário.</u> </p>
+                </div>  
+
+                <div>
+                    <p>Para configurar uma <u>largura fixa</u>, pode criar uma <i>.class</i> e definir o <i>width</i> utilizando <u> unidades absolutas (px)</u>. Por exemplo: </p>
+                    <p class="largurafixa">Largura Fixa</p>
+                    <object data="../html/exemplos-sticky-notes/ex-02-largura-fixa.html"></object><br>
+                </div>
+
+                
+                <div>
+                    <h5>Elementos Gráficos</h5>
+
+                    <p>Sites e apps precisam exibir gráficos. Imagens estáticas podem ser exibidas usando o elemento img. Mas o melhor é usar gráficos em tempo real ou manipular imagens depois de criadas.</p>
+
+                    <p class="elemento-grafico"> <u>Scalable Vector Graphics (SVG)</u> permite o uso de linhas, curvas e formas geométricas para renderizar gráficos. Com o SVG, pode-se criar imagens que <strong>se redimensionam para qualquer tamanho. </strong> Exemplo:</p>
+
+                    <div id="imagem-vetorial">
+                        <img src="./M8-apoio/images/coffee.svg" alt="café ">
+                        <object data="../html/exemplos-sticky-notes/ex-03-imagem-vetorial.html"></object>
+                    </div> <br>
+
+                    <p class="elemento-grafico"> Além disso, o CSS pode ser usado para criar elementos gráficos. <br>
+                        Criando um círculo:
+                        <div id="grafico-circulo"></div>
+                        <object data="../html/exemplos-sticky-notes/ex-04-circulo.html"></object>
+                    </p>
+
+                    <p class="elemento-grafico"> Criando um triangulo:
+                        <div id="grafico-triangulo"></div>
+                        <object data="../html/exemplos-sticky-notes/ex-5-triangulo.html"></object>
+                    </p>
+                
+                </div>
+            </article>
+        </section>
+
+        <footer>
+            <ul class="navegacao">
+                <li class="socialmidia"><a href="https://www.instagram.com/_karolinabarb/" target="_blank"> <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="Instagram" style="width:30px;height:30px" class="img"></a></li>
+                <li class="socialmidia"><a href="https://www.facebook.com/karolina.lopes.50/" target="_blank"> <img src="https://cdn-icons-png.flaticon.com/512/20/20837.png" alt="Facebook" style="width:30px;height:30px" class="img"></a></li>
+                <li class="socialmidia"><a href="https://www.linkedin.com/in/karolina-lopes-barbosa-39035323a/" target="_blank"> <img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="linkedin" style="width:30px; height: 30px" class="img"></a></li>
+                <li class="socialmidia"><a href="https://github.com/klopesb" target="_blank"> <img src="./imagens/GitHub-Mark-64px.png" alt="GitHub" style="width:30px;height:30px" class="img"></a></li>
+            </ul>   
+            <p class="footer">Desenvolvido por Karolina
+                
+            </p>
+        </footer>
+
+    </body>
+</html>

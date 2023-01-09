@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./css/reset.css">
+        <link rel="stylesheet" type="text/css" href="./css/new-style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&family=Source+Code+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+        <title> HTML/CSS - Web Layouts </title>
+    </head>
+    <body>
+        <header>
+            <h1>Curso Front-end</h1>
+            <p class="subtitle">Aprenda do Zero ao Pro</p>
+            <h1>Escola Britânica de Artes Criativas e Tecnologia</h1>
+        </header>
+        <div class="nav-container">
+            <div class="link-container">
+                <a class="homepage" href="./01-homepage-1.html">About me</a>
+                <a class="homepage" href="./contato.html">Contato</a>
+            </div>
+        
+        </div>
+
+        <section>
+            <nav>					
+                <h3>Aulas</h3>
+                <ul class="navegacao">
+                    <li><a href="./02-listas-e-links-2.html"> Listas e Links</a></li>
+                    <li><a href="./07-tabela-responsiva-2.html"> Tabelas</a></li>
+                    <li><a href="./08-web-layouts-1.html"> Web Layouts</a></li>
+					<li><a href="./09-web-layouts-2.html"> Web Layouts/2</a></li>
+
+                </ul>
+            </nav>
+
+            <article>
+                <div class="title-container">
+                    <h2>Listas HTML</h2>
+                </div>
+
+                    <div>
+						<p>As listas HTML permitem que o desenvolvedor agrupe uma série de itens relacionados em uma lista.<br>
+						<h5 id="unordered-list">Lista não Ordenada</h5><br>
+						Uma <strong>lista HTML não ordenada</strong> começa com a tag <strong><"ul"></strong> e cada item da lista 
+						tem a tag <strong><"li"></strong>.</p>
+
+						<div>
+							<ul > <!--Unordered Lists, são listas marcadas por bullets points -->
+								<li>Item</li>
+								<li>Item</li>
+								<li>Item</li>
+								<li>Item</li>
+								<li>Item</li>
+							</ul>
+							<object data="../html/exemplos-sticky-notes/ex-unordered-list.html"></object>
+						</div>	
+					</div>
+
+					<div>
+						<h5 id="ordered-list">Lista Ordenada</h5><br>
+						<p>Uma <strong>lista HTML ordenada</strong> começa com a tag <strong> <"ul"></strong> e 
+						cada item da lista tem a tag <strong><"li"></strong>.</p>
+
+						<ol > <!--Ordered Lists, são listas marcadas por ordem numérica -->
+							<li>Item</li>
+							<li>Item</li>
+							<li>Item</li>
+							<li>Item</li>
+							<li>Item</li>
+						</ol>
+						<object data="../html/exemplos-sticky-notes/ex-ordered-list.html"></object>
+					</div>
+
+					<div>
+						<h5 id="defined-list">Lista de Definições</h5><br>
+						<p>Uma <strong>Lista de Definições</strong> são listas descritivas e começa com a tag <strong><"dl"></strong>. 
+						A tag <strong> <"dt"></strong> define o termo (nome), e a <strong><"dd"></strong> define a descrição de cada termo. Exemplo:</p><br>
+
+						<dl > <!--defined lists, são listas que descritivas -->
+							<dt>Café</dt>
+							<dd>"Bebida produzida a partir de grãos torrados do cafeeiro"</dd>
+						</dl><br>
+						<object data="../html/exemplos-sticky-notes/ex-defined-list.html"></object>
+
+					</div>
+					
+					<div>
+						<h5>Links</h5><br>
+
+						<p>A tag HTML <"a"> define um hiperlink. O atributo <strong>"href"</strong> é o 
+						mais importante pra esse elemento pois vai indicar o destino do link</p>
+
+						<!--tag <a> serve para linkar sites, o atributo href é a referência. O atributo target blank serve para abrir o link em uma nova aba -->
+						<h5>link externo</h5>
+						<p>Pode-se usar um link externo para levar a uma página diferente. Exemplo:</p>
+						<a href="https://ebaconline.com.br" target="_blank"> Página da EBAC </a> <br>
+						<object data="../html/exemplos-sticky-notes/ex-link-externo.html"></object><br>
+						<!-- a # dentro do href serve para colocar um link interno -->
+						
+						<h5>link interno</h5>
+						<p>Pode-se linkar diferentes tópicos em uma mesma página. Exemplo:</p>
+						<div class="link-interno">
+							<p><a href="#unordered-list">Lista não ordenada</a></p>
+							<p><a href="#ordered-list">Lista Ordenada</a></p>
+							<p><a href="#defined-list">Lista de Definições</a></p>
+							
+							</div>
+						<object data="../html/exemplos-sticky-notes/ex-link-interno.html"></object>
+
+						<p><a href="#top">Voltar ao Topo</a></p>
+
+					</div>	
+            </article>
+        </section>
+
+        <footer>
+            <ul class="navegacao">
+                <li class="socialmidia"><a href="https://www.instagram.com/_karolinabarb/" target="_blank"> <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="Instagram" style="width:30px;height:30px" class="img"></a></li>
+                <li class="socialmidia"><a href="https://www.facebook.com/karolina.lopes.50/" target="_blank"> <img src="https://cdn-icons-png.flaticon.com/512/20/20837.png" alt="Facebook" style="width:30px;height:30px" class="img"></a></li>
+                <li class="socialmidia"><a href="https://www.linkedin.com/in/karolina-lopes-barbosa-39035323a/" target="_blank"> <img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="linkedin" style="width:30px; height: 30px" class="img"></a></li>
+                <li class="socialmidia"><a href="https://github.com/klopesb" target="_blank"> <img src="./imagens/GitHub-Mark-64px.png" alt="GitHub" style="width:30px;height:30px" class="img"></a></li>
+            </ul>   
+            <p class="footer">Desenvolvido por Karolina
+                
+            </p>
+        </footer>
+
+    </body>
+</html>
