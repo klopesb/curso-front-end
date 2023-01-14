@@ -8,8 +8,6 @@
 	text-align: center;
 	background: black;
 	color: white;
-	margin: auto;
-	font-weight: bold;
 	padding: 0.8rem;
 	empty-cells: hide; /*esconder as células vazias*/
 }
@@ -35,7 +33,7 @@ table tr td:first-child {
 
 .table-container {
 	margin-bottom: 1rem;
-	
+	overflow-x: auto;
 }
 
 table {
@@ -67,3 +65,16 @@ tr:hover {
 td:hover {
 	background: rgba(53, 128, 125, 0.35);
 }
+
+@media (max-width: 480px) { 
+	
+	.table-action tr {
+	  border-bottom: 1px solid #dddddd;
+	}
+	.table-action td {
+	  border: 0;
+	}
+	/*.table-action td:not(:first-child) {
+	  display: block;
+	}*/
+  }
